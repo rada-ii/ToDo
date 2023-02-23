@@ -1,0 +1,158 @@
+body {
+  background: repeating-linear-gradient(
+    to right,
+    #1a4786,
+    #2b5e92,
+    #1c68b0,
+    #193a95,
+    #0b72ae
+  );
+  background-size: 400% 400%;
+  animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.container {
+  max-width: 470px;
+}
+
+button,
+input[type="text"],
+input[type="datetime-local"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  cursor: pointer;
+}
+
+input[type="text"]:hover {
+  color: #e1d9d9;
+}
+
+.todo-text {
+  width: 100%;
+  text-align: left;
+}
+
+.todos li {
+  background: #75aadf;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-align: left;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.todos li span {
+  flex-grow: 1;
+  word-wrap: break-word;
+  margin-right: 5px;
+}
+
+.delete {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid #1e90ff;
+}
+
+.delete:hover {
+  background-color: #dc3545;
+}
+
+.alarm {
+  display: flex;
+  align-items: self-end;
+}
+
+.alarm i {
+  margin-right: 5px;
+}
+
+.alarm span {
+  position: relative;
+}
+
+.alarm span .text-danger {
+  position: absolute;
+  right: 0px;
+  top: -3px;
+  color: #dc3545;
+}
+
+.filtered {
+  display: none !important;
+}
+
+.input-group-append button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.input-group-append button:hover {
+  background-color: #0069d9;
+  color: white;
+}
+
+.add .form-control {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.add .form-control:focus {
+  box-shadow: none;
+}
+
+.add .input-group-append {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.alarm {
+  display: flex;
+  align-items: center;
+}
+
+.alarm i,
+.alarm div {
+  border: 2px solid #1e90ff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.alarm span {
+  padding: 1px;
+  border: 2px solid #1e90ff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.alarm div {
+  margin-left: -5px;
+}
+
+.list-group-item {
+  min-height: 20px;
+  padding: 10px;
+}
