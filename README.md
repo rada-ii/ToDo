@@ -4,7 +4,10 @@ A simple web application that allows you to add and delete todos with alarm func
 
 ## 🚀 Live Demo
 
-**🌐 [View Live Application](https://rada-ii.github.io/ToDo/)**
+<a href="https://rada-ii.github.io/ToDo/" target="_blank" rel="noopener noreferrer">
+    👉 View Live Application
+</a>
+
 
 ## ✨ Features
 
